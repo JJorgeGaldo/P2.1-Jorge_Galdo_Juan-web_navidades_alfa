@@ -1,0 +1,93 @@
+body {
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../imagenes/IMG_5732.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+header{
+  width: 100%;
+  top: 50px;
+  z-index: 1;
+}
+.foto_cabecera {
+    background-image: url(../imagenes/Lugo.jpg);
+    /* background-color: burlywood; */
+    height: 850px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-flow: row-reverse wrap;
+    justify-content: space-around;
+    
+}
+
+.texto_cabecera {
+    width: 300px;
+    height: 150px;
+    padding: 0 25px 0;
+    text-align: center;
+    position: relative;
+    /*transform: translate(-50%, -50%); */
+    background-color: rgba(173, 177, 177, 0.8);
+    color: rgba(62, 173, 136, 1.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+}
+h1{
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 3em;
+    z-index: 15;
+}
+h3{
+    margin-top: -10px;
+}
+span{
+    position: relative;
+    color: white;
+    font-size: 1.4em;
+    z-index: 5;
+}
+#detalle{
+    z-index: 15;
+}
+#navegador #nav_inicio{
+    /* border: 2px rgb(228, 95, 46);
+    border-style: dashed;
+    border-radius: 50%;
+    border-left: 15px;
+    border-bottom-left-radius: 5px; */
+    background-color: rgba(67, 90, 97,1);
+    color: ivory;
+}
+
+#espacio{
+  height: 250px;
+  opacity: 0%;
+}
+.wrapped{
+  /* margin-top: 0px;
+  width: 300px;
+  height: 115px; */
+  /* border: 2px solid black; */
+  /* position: absolute; */
+  /* top: 10%;  */
+  width: 100%;
+  margin-left: 10%;
+  margin-bottom: 80px;
+  align-items: center;
+}
