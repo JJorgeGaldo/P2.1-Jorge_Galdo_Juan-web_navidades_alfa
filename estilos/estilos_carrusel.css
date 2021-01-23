@@ -145,3 +145,10 @@ aside.cara10 { /* arriba */
       transform: translateZ(-150px) rotateY(-720deg);
   }
 }
+
+@media screen and (max-width: 660px){
+  div.espacio3D {
+    transform: scale(0.3);
+  }
+  
+}

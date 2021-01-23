@@ -36,7 +36,7 @@ img{
   font-size: 1.1em;
   padding: 10px;
   vertical-align: middle;
-  
+  letter-spacing: 8px;
 }
 
 #navegador a:hover{
@@ -52,3 +52,38 @@ img{
   position: relative;
   z-index: 3;
 } */
+
+@media screen and (max-width: 1060px){
+  #navegador{
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 960px){
+  #navegador{
+    width: 60%;
+  }
+}
+@media screen and (max-width: 860px){
+  #navegador{
+    width: 65%;
+    font-size: 0.8em;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 760px){
+  #navegador{
+    width: 70%;
+    font-size: 0.8em;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 660px){
+  
+  #navegador{
+    width: 100%;
+    font-size: 0.5em;
+    height: 30px;
+    letter-spacing: 2px;
+  }
+}
