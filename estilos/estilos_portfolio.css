@@ -2,20 +2,9 @@ body{
     width: 100%;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
-    /* background-color: bisque; */
-    /* background-image: url(../imagenes/Barco_cies.jpg); */
-    /* background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed; */
 }
 
 #navegador #nav_portfolio{
-    /* border: 2px rgb(228, 95, 46);
-    border-style: dashed;
-    border-radius: 50%;
-    border-left: 15px;
-    border-bottom-left-radius: 5px; */
     background-color: rgba(67, 90, 97,1);
     color: ivory;
 }
@@ -27,9 +16,7 @@ body{
     grid-template-rows: 250px 250px 250px 250px 250px;
     justify-content: space-evenly;
     align-content: space-between;
-    
 }
-
 .marco_zoom{
     overflow: hidden;
 }
@@ -89,10 +76,6 @@ body{
     font-size: 18px;    
 }
 
-
-
-
-
 /*** Posicionando los divs en el grid ***/
 #marco_zoom_foto1{
     grid-column: 1 / 7;
@@ -130,7 +113,6 @@ body{
     grid-column: 7 / 11;
     grid-row: 4 / 6;
 }
-
 
 /*** Ajustes de cada foto en particular ***/
 #foto1{       
