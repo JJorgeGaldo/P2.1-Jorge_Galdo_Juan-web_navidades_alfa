@@ -1,14 +1,23 @@
 body {
+  width: 100%;
   margin: 0 auto;
-  height: 99vh;
   font-family: Arial, Helvetica, sans-serif;
   background-image: url(../imagenes/IMG_5732.jpg);
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+}
+.divisor{
+  width: 100%;
+  background-color: rgba(28, 95, 95, 0.7);
+  color: white;
+  font-size: 3rem;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 15px;
+  text-align: center;
 }
 
 /*** Menú navegación ***/
@@ -21,7 +30,6 @@ body {
 header{
   width: 100%;
   height: 100vh;
-  top: 50px;
   z-index: 1;
 }
 .foto_cabecera {
@@ -40,11 +48,10 @@ header{
 .texto_cabecera {
   width: 300px;
   height: 150px;
-  margin-left: 50%;
-  margin-top: 45%;
-  padding: 0 25px 0;
+  margin-left: 60%;
+  margin-top: 10%;
+  padding: 10px 25px;
   text-align: center;
-  position: relative;
   /*transform: translate(-50%, -50%); */
   background-color: rgba(28, 95, 95, 0.7);
   color: rgba(62, 173, 136, 1.2);
@@ -57,17 +64,18 @@ header{
 h1{
   position: relative;
   margin-top: 5px;
-  margin-bottom: 0;
+  margin-bottom: -30px;
   font-size: 3em;
   z-index: 15;
 }
 h3{
   margin-top: -10px;
+  margin-bottom: 0;
 }
 span{
   position: relative;
   color: white;
-  font-size: 1.1em;
+  font-size: 1.3em;
   z-index: 5;
 }
 .detalle{
@@ -83,7 +91,6 @@ span{
   height: 50px;
   left: 50px;
   z-index: 2;
-  border: 2px solid violet;
   font-family: 'Courier New', Courier, monospace;
 }
 #burger{
@@ -92,12 +99,15 @@ span{
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
+  transition: all ease-in 1s;
+  /* background-color: rgba(128, 128, 128,.7); */
 }
 .line{
-  width: 25px;
+  width: 30px;
   height: 5px;
-  background-color: rgba(62, 173, 136, 1.2);
+  background-color: rgba(61, 196, 196, 0.9);
+  border-radius: 20%;
 }
 #menu{
   position:relative;
@@ -108,24 +118,33 @@ span{
   justify-content: space-around;
   text-align: center;
   background-color: rgba(128, 128, 128,.7);
-  left: -500px;
+  left: -400px;
   /* display: none; */
-  transition: ease-in 1s;
+  transition: all ease-in 1s;
 }
 #menu a{
   color: white;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5rem;
+  height: 33%;
+  vertical-align: middle;
+  padding-top: 22%;
+}
+#flecha_menu{
+  display: none;
+  color: aquamarine;
+  font-size: 3rem;
+  font-weight: bolder;
 }
 #nav:hover #menu{
   left: -50px;
-  width: 300px;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: center;
+}
+#nav:hover #burger{
+  transform: rotate(-360deg);
+}
+#menu a:hover{
+  background-color: rgba(28, 95, 95, 0.7);
 }
 
 /*** Cuerpo ***/
@@ -134,23 +153,6 @@ span{
   background-color: cornflowerblue;
   opacity: 19%;
 }
-#carrusel{
-  height: 350px;
-  background-color: white;
-}
-.wrapped{
-  /* margin-top: 0px;
-  width: 300px;
-  height: 115px; */
-  /* border: 2px solid black; */
-  /* position: absolute; */
-  /* top: 10%;  */
-  width: 100%;
-  margin-left: 10%;
-  margin-bottom: 80px;
-  align-items: center;
-}
-
 
 /*** Parte responsive ***/
 @media screen and (max-width: 660px){

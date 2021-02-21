@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="./estilos/estilos.css">
     <link rel="stylesheet" href="./estilos/estilos_index.css">
     <link rel="stylesheet" href="./estilos/estilos_carrusel.css">
+    <link rel="stylesheet" href="./estilos/estilos_portfolio.css">
+    <link rel="stylesheet" href="./estilos/estilos_contacto.css">
+    <script src="./scripts/index.js"></script>
 </head>
 <body>
+    <a name="inicio"></a>
     <header>
         <div class="foto_cabecera">
             <div class="texto_cabecera">
@@ -18,30 +22,133 @@
             </div>
         </div>
     </header>
-
-    <!-- <nav id="nav_continent">
-        <div id="navegador">
-            <a id="nav_inicio" href="index.html">inicio</a>
-            <a id="nav_portfolio" href="portfolio.html">portfolio</a>
-            <a id="nav_contacto" href="contacto.html">contacto</a>
-        </div>
-    </nav>
- -->
-    <div id="nav">
+    <nav id="nav">
         <div id="burger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
         <section id="menu">
-                <a id="nav_inicio" href="index.html">inicio</a>
-                <a id="nav_portfolio" href="portfolio.html">portfolio</a>
-                <a id="nav_contacto" href="contacto.html">contacto</a>
+                <a id="nav_inicio" href="#inicio">inicio</a>
+                <a id="nav_portfolio" href="#portfolio">portfolio</a>
+                <a id="nav_contacto" href="#contacto">contacto</a>
         </section>
+    </nav>
+    <div id="espacio"></div>
+    <div class="divisor">
+        <a name="portfolio"></a>
+        Portfolio        
     </div>
+    
+    <section id="fotos">
+        
+        <div class="marco_zoom" id="marco_zoom_foto1">
+            <div class="foto" id="foto1">
+                <a href="./imagenes/Los Pollos Hermanos.jpg" class="link_foto" target="_blank">
+                    <div class="texto_foto">
+                        <p class="titulo_foto">LOS POLLOS HERMANOS</p>
+                        <p>Click para ampliar</p>
+                    </div>
+                </a>
+            </div>
+        </div>
 
-    <div id="cuerpo">        
-        <div id="espacio"></div>
+        <div class="marco_zoom" id="marco_zoom_foto2">
+            <div class="foto" id="foto2">
+                <a href="./imagenes/Barco_cies.jpg" class="link_foto" target="_blank">
+                    <div class="texto_foto">
+                        <p class="titulo_foto">PIRATAS DE LAS CÍES</p>
+                        <p>Click para ampliar</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="marco_zoom" id="marco_zoom_foto3">
+            <div class="foto" id="foto3" >
+                <a href="./imagenes/Foto Pareja Faro Cabo Home.JPG" class="link_foto" target="_blank">
+                    <div class="texto_foto">
+                        <p class="titulo_foto">LA NOVIA CADAVER</p>
+                        <p>Click para ampliar</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="marco_zoom" id="marco_zoom_foto4">
+            <div class="foto" id="foto4" >
+                <a href="./imagenes/Viveiro.JPG" class="link_foto" target="_blank">
+                    <div class="texto_foto">
+                        <p class="titulo_foto">VIVEIRO & COMARCA</p>
+                        <p>Click para ampliar</p>
+                    </div>
+                </a>
+            </div> 
+        </div>
+
+        <div class="marco_zoom" id="marco_zoom_foto5">
+            <div class="foto" id="foto5" >
+                <a href="./imagenes/Frambuesas.jpg" class="link_foto" target="_blank">
+                    <div class="texto_foto">
+                        <p class="titulo_foto">EN EL HUERTO</p>
+                        <p>Click para ampliar</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="marco_zoom" id="marco_zoom_foto6">
+            <div class="foto" id="foto6" >
+                <a href="./imagenes/Vaca marron jpg recorte.JPG" class="link_foto" target="_blank">
+                    <div class="texto_foto">
+                        <p class="titulo_foto">MIAU</p>
+                        <p>Click para ampliar</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        
+        <div class="marco_zoom" id="marco_zoom_foto7">            
+            <div class="foto" id="foto7" >
+                <a href="./imagenes/Zíngaro 2.jpg" class="link_foto" target="_blank">
+                    <div class="texto_foto">
+                        <p class="titulo_foto">FUTTITINNI</p>
+                        <p>Click para ampliar</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="marco_zoom" id="marco_zoom_foto8">
+            <div class="foto" id="foto8" >
+                <a href="./imagenes/IMG_5386.jpg" class="link_foto" target="_blank">
+                    <div class="texto_foto">
+                        <p class="titulo_foto">DIENTES DE LECHE</p>
+                        <p>Click para ampliar</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="marco_zoom" id="marco_zoom_foto9">
+            <div class="foto" id="foto9" >
+                <a href="./imagenes/Cabra_cares.jpeg" class="link_foto" target="_blank">
+                    <div class="texto_foto">
+                        <p class="titulo_foto">PASA PA CARES</p>
+                        <p>Click para ampliar</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="divisor">
+        Contacto
+        <a name="contacto"></a>
+    </div>
+    
+    <section id="pagina_contacto">
         <div id="carrusel">
             <div class="wrapped">
                 <div class="espacio3D">
@@ -60,12 +167,37 @@
                     </div><!-- termina cubo 3d -->
                 </div><!-- termina espacio 3d -->
             </div> <!-- termina el wrapped -->
-        </div>
-    </div>
+        </div><!-- termina el carrusel -->
+        <div id="formulario"> <!-- div que contiene el formulario -->
+            <form action="contacto.php" method="POST" enctype="multipart/form-data">
 
-    <br>
-    <br>
+                <div id="contiene_campos"> <!-- campos de formulario -->
+                    <div class="campo">                           
+                        <input type="text" name="nome" placeholder="Nombre" id="nome">
+                    </div>
+                    <div class="campo">
+                        <input type="text" name="apel" placeholder="Apellidos" id="apel">
+                    </div>
+                    <div class="campo">
+                        <input type="email" name="apel" placeholder="Email" id="apel">
+                    </div>
+                    <div class="campo">
+                        <input type="text" name="apel" placeholder="Teléfono" id="apel">
+                    </div>
+                </div>
 
+                <div id="texto"> <!-- area de texto del formulario -->
+                <textarea name="observaciones" id="observaciones" cols="30" rows="10"></textarea>
+                </div> 
+
+                <br>
+                <div id="botones"> <!-- botones del formulario-->
+                    <input type="reset" name="restablecer" id="restablecer" value="Borrar datos">
+                    <input type="button" name="crear" id="crear" value="Enviar">
+                </div> 
+            </form><!-- fin del formulario -->
+        </div><!-- fin del contenedor formulario -->
+    </section><!-- fin de la sección de contacto -->
     
 
 </body>
