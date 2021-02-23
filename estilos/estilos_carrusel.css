@@ -7,7 +7,7 @@ div.espacio3D {
   /* top: 60px; */
   perspective-origin: center -30%;
   perspective: 1000px;
-  transform: scale(0.3);
+  transform: scale(0.4);
 }
 div.cubo3D {
   width: 100%;

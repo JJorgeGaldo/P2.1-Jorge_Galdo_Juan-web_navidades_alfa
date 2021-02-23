@@ -12,47 +12,46 @@
 
 /*** Formato Contenedor carrusel ***/
 #carrusel{
-    margin: 0;
+    margin-left: 35%;
     background-color: rgba(0,0,0,0);
-    display: flex;
-    justify-content: flex-end;
-}
-.wrapped{
-    margin-top: -20px;
-    margin-right: 50px;
+    padding-top: 20px;
+    /* display: flex;
+    justify-content: flex-end; */
 }
 /*** Formato campos formulario ***/
 #formulario{
-    width: 70%;
+    width: 50%;
     height: 50%;
     margin-left: 5%;
-    margin-top: -200px;
+    margin-top: 80px;
     padding-top: 50px;
 }
 #contiene_campos{
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .campo{
     width: 48%;
     height: 60px;
     margin-bottom: 5px;
-    caret-color: rgb(188, 85, 248);/* rgb(62, 173, 136); */
-    font-size: 1.1em;
+    caret-color: rgb(228, 167, 53);
     font-weight: bold;
     text-align: center;
-    color: rgb(62, 173, 136);/* rgb(224, 175, 13); */
     backface-visibility: hidden;
     opacity: 100%;
+    color: rgba(28, 95, 95, 0.7);
 }
 .campo input{
     width: 100%;
     height: 100%;
     border: none;
     background-color: rgba(255,255,255,.3);
+    font-size: 1.5rem;
+    color: rgba(28, 95, 95, 0.7);
+    font-family: 'Courier New', Courier, monospace;
 }
 .campo input:hover{
     background-color: rgba(121, 126, 116,.5);;
@@ -63,11 +62,13 @@
     justify-items: left;
 }
 textarea{
+    resize: none;
     width: 100%;
     margin: 0;
     margin-top: 15px;
     background-color: rgba(255, 255, 255, 0.3);
     border: none;
+    font-size: 1.1rem;
 }
 textarea:focus, input:focus{
     border-color: rgb(126, 184, 73);

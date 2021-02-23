@@ -11,15 +11,17 @@ body {
   flex-direction: column; */
 }
 .divisor{
-  width: 100%;
   background-color: rgba(28, 95, 95, 0.7);
   color: white;
   font-size: 3rem;
   font-family: 'Courier New', Courier, monospace;
   padding: 15px;
   text-align: center;
+  font-weight: bold;
 }
-
+a{
+  padding-top: 16px;
+}
 /*** Menú navegación ***/
 #navegador #nav_inicio{
   background-color: rgba(67, 90, 97,1);
@@ -148,8 +150,15 @@ span{
 }
 
 /*** Cuerpo ***/
-#espacio{
-  height: 650px;
+#engloba{
+  background-image: url('../imagenes/All_Star.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.espacio{
+  height: 500px;
   background-color: cornflowerblue;
   opacity: 19%;
 }

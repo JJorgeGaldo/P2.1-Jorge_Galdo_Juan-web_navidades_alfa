@@ -3,7 +3,7 @@
     color: ivory;
 }
 #fotos{
-    margin-bottom: 20px;
+    margin-bottom: 0;
     width: 100%;
     display: grid;
     grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
