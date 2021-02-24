@@ -106,6 +106,7 @@ span{
   50% {opacity: 90%;transform: translateY(8px);}
   100% {opacity: 100%;transform: translateY(24px);}
 }
+
 /*** Burger menu ***/
 #nav{
   position: fixed;

@@ -5,44 +5,6 @@
 img{
   max-width: 100%;
 }
-#nav_continent{
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: end;
-  z-index: 1;
-}
-
-#navegador{
-  z-index: 2;
-  font-family: 'Courier New', Courier, monospace;
-  position: fixed;
-  top: 0px;
-  right: 0;
-  width: 50%;
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: auto;
-  background-color: white;
-}
- 
-#navegador>a{
-  height: 100%;
-  box-sizing: border-box;
-  color: rgba(67, 90, 97,.9);
-  text-decoration: none;
-  font-size: 1.1em;
-  padding: 10px;
-  vertical-align: middle;
-  letter-spacing: 8px;
-}
-
-#navegador a:hover{
-  background-color:rgba(67, 90, 97,.5);
-}
 
 @media screen and (max-width: 1060px){
   /*** Menú navegación ***/
@@ -78,25 +40,30 @@ img{
     height: 40px;
   }
 }
-@media screen and (max-width: 660px){
-body{
-  background-position: center;
-}
-/*** Menú navegación ***/
+@media screen and (max-width: 560px){
+  body{
+    background-position: center;
+  }
+
+  /*** Menú navegación ***/
   #nav{
     display: none;
   }
   #nav_continent{
     width: 100%;
     height: 50px;
-    position: fixed;
+    display: flex;
+    justify-content: end;
     z-index: 1;
+    position: fixed;
   }
   #navegador{
+    z-index: 2;
     width: 100%;
+    position: fixed;
     top: 0px;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 0.5em;
+    font-size: 0.6em;
     height: 30px;
     letter-spacing: 2px;
     font-weight: bold;
@@ -112,7 +79,7 @@ body{
     box-sizing: border-box;
     color: rgba(67, 90, 97,.9);
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.1em;
     padding: 10px;
     vertical-align: middle;
     letter-spacing: 8px;
@@ -122,70 +89,63 @@ body{
     background-color:rgba(67, 90, 97,.5);
   }
 
-/*** Header con imagen y texto ***/
-.texto_cabecera {
-  width: 40%;
-  height: 150px;
-  margin-left: 35%;
-  margin-top: 25%;
-  padding: 10px 25px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  border: 2px solid violet;
-}
-h1{
-  position: relative;
-  margin-top: 5px;
-  margin-bottom: -30px;
-  font-size: 2.5rem;
-  z-index: 15;
-}
-h3{
-  margin-top: -10px;
-  margin-bottom: 0;
-}
-span{
-  position: relative;
-  color: white;
-  font-size: 1.6em;
-  z-index: 5;
-}
-.detalle{
+  /*** Header con imagen y texto ***/
+  .texto_cabecera {
+    width: 40%;
+    height: 150px;
+    margin-left: 15%;
+    margin-top: 30%;
+    border: 2px solid blue;
+  }
+  h1{
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: -30px;
+    font-size: 1.5rem;
     z-index: 15;
-    font-family: 'Courier New', Courier, monospace;
-}
-#flecha{
-  font-size: 5rem;
-  font-weight: bolder;
-  padding-right: 17%;
-  animation: parpadeo .5s infinite alternate linear;
-  animation-timing-function: cubic-bezier();
+  }
+  h3{
+    margin-top: -10px;
+    margin-bottom: 0;
+  }
+  span{
+    position: relative;
+    color: white;
+    font-size: 1.6em;
+    z-index: 5;
+  }
+  .detalle{
+      z-index: 15;
+      font-family: 'Courier New', Courier, monospace;
+  }
+  #flecha{
+    font-size: 5rem;
+    font-weight: bolder;
+    padding-right: 17%;
+    animation: parpadeo .5s infinite alternate linear;
 
-}
-@keyframes parpadeo{
-  0% {opacity: 100%;transform: translateY(0);}
-  50% {opacity: 90%;transform: translateY(8px);}
-  100% {opacity: 100%;transform: translateY(24px);}
-}
+  }
+  @keyframes parpadeo{
+    0% {opacity: 100%;transform: translateY(0);}
+    50% {opacity: 90%;transform: translateY(8px);}
+    100% {opacity: 100%;transform: translateY(24px);}
+  }
 
-/*** Portfolio ***/
-#fotos{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-}
-.foto{
-  width: 100%;
-  height: 150px;
-}
+  /*** Portfolio ***/
+  #fotos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .foto{
+    width: 100%;
+    height: 150px;
+  }
 
 
-/*** Contacto ***/
+  /*** Contacto ***/
 
 
 }
