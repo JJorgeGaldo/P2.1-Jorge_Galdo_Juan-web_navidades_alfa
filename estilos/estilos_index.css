@@ -26,6 +26,11 @@ a{
 #nav_continent{
   display: none;
 }
+@media screen and (max-width: 660px){
+  #nav_continent{
+    display: flex;
+  }
+}
 #navegador #nav_inicio{
   background-color: rgba(67, 90, 97,1);
   color: ivory;
