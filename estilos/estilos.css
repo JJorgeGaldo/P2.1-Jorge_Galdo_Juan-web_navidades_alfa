@@ -79,7 +79,9 @@ img{
   }
 }
 @media screen and (max-width: 660px){
-
+body{
+  background-position: center;
+}
 /*** Menú navegación ***/
   #nav{
     display: none;
@@ -121,7 +123,53 @@ img{
   }
 
 /*** Header con imagen y texto ***/
+.texto_cabecera {
+  width: 40%;
+  height: 150px;
+  margin-left: 35%;
+  margin-top: 25%;
+  padding: 10px 25px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  border: 2px solid violet;
+}
+h1{
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: -30px;
+  font-size: 2.5rem;
+  z-index: 15;
+}
+h3{
+  margin-top: -10px;
+  margin-bottom: 0;
+}
+span{
+  position: relative;
+  color: white;
+  font-size: 1.6em;
+  z-index: 5;
+}
+.detalle{
+    z-index: 15;
+    font-family: 'Courier New', Courier, monospace;
+}
+#flecha{
+  font-size: 5rem;
+  font-weight: bolder;
+  padding-right: 17%;
+  animation: parpadeo .5s infinite alternate linear;
+  animation-timing-function: cubic-bezier();
 
+}
+@keyframes parpadeo{
+  0% {opacity: 100%;transform: translateY(0);}
+  50% {opacity: 90%;transform: translateY(8px);}
+  100% {opacity: 100%;transform: translateY(24px);}
+}
 
 /*** Portfolio ***/
 #fotos{
