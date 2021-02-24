@@ -1,9 +1,10 @@
 #pagina_contacto{
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../imagenes/Zíngaro\ 2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 15%;
+    padding-bottom: 30px;
 }
 #navegador #nav_contacto{
     background-color: rgb(67, 90, 97);
