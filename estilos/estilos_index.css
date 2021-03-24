@@ -21,6 +21,7 @@ body {
 }
 a{
   padding-top: 16px;
+  line-height: 33%;
 }
 /*** Menú navegación ***/
 #nav_continent{
@@ -135,8 +136,9 @@ span{
 }
 #menu{
   position:relative;
+  top: 10px;
   width: 300px;
-  height: 500px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -150,10 +152,12 @@ span{
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.5rem;
-  height: 33%;
+  font-size: 1.5rem;/* 
+  height: 33%; */
+  line-height: 32.5vh;
   vertical-align: middle;
-  padding-top: 22%;
+  text-align: center;
+  background-color: aquamarine;
 }
 #flecha_menu{
   display: none;
