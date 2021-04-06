@@ -21,7 +21,7 @@ body {
 }
 a{
   padding-top: 16px;
-  line-height: 33%;
+  line-height: 33vh;
 }
 /*** Menú navegación ***/
 #nav_continent{
@@ -154,10 +154,10 @@ span{
   font-weight: bold;
   font-size: 1.5rem;/* 
   height: 33%; */
-  line-height: 32.5vh;
+  line-height: 32vh;
   vertical-align: middle;
-  text-align: center;
-  background-color: aquamarine;
+  text-align: center; 
+  /*background-color: aquamarine; */
 }
 #flecha_menu{
   display: none;
