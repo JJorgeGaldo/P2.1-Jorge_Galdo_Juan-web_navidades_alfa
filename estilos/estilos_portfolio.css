@@ -54,7 +54,8 @@
 }
 .texto_foto{
     z-index: 4;
-    font-size: 15px;
+    height: 5vh;
+    font-size: 1vw;
     color: rgba(62, 173, 136, 1.2);
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
@@ -63,12 +64,17 @@
     background-color: rgba(67, 90, 97,.8);/* rgba(128,128,128,.8); */
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 10px;
 }
 .texto_foto .titulo_foto{
     font-weight: normal;
     color: white;
     text-decoration: none;
-    font-size: 18px;    
+    font-size: 1.5vw;
+    margin-top: 0;
+}
+.texto_foto p:nth-child(2){
+    margin: 0;
 }
 
 /*** Posicionando los divs en el grid ***/
